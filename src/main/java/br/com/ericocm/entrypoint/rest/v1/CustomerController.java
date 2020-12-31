@@ -6,6 +6,7 @@ import br.com.ericocm.entrypoint.rest.v1.dto.CustomerPostDto;
 import br.com.ericocm.entrypoint.rest.v1.mapper.CustomerDtoMapper;
 import br.com.ericocm.entrypoint.rest.v1.mapper.CustomerPostDtoMapper;
 import br.com.ericocm.usecase.customer.CreateCustomer;
+import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;

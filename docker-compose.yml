@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  postgres-crud-quarkus:
+  postgres:
     image: postgres
     environment:
       POSTGRES_USER: "postgres"
@@ -9,3 +9,12 @@ services:
       POSTGRES_DB: crud-quarkus-sample
     ports:
       - "5432:5432"
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "5775:5775/udp"
+      - "6831:6831/udp"
+      - "6832:6832/udp"
+      - "5778:5778"
+      - "16686:16686"
+      - "14268:14268"

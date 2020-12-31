@@ -10,7 +10,6 @@ import static javax.ws.rs.core.Response.Status.BAD_REQUEST;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Response;
 
 @ApplicationScoped
 public class FindAddressByZipCode {
